@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="home.css" media="screen" />
+    <title>Home</title>
+</head>
+<body>
+    <div class="logo">
+        <h4>Logo</h4>
+    </div>
+
+    <div class="Titulo">
+        <h1>Cadastro de Clientes</h1>
+    </div>
+
+    <div class="campodepreenchimento">
+        <form>
+            <label for="nome">Nome:
+                <input type="text" id="nome" name="nome" required>
+            </label>
+        </form>
+        
+        <form>
+            <label for="sobrenome">Sobrenome:
+                <input type="text" id="sobrenome" name="sobrenome" required>
+            </label>
+        </form>
+        
+        <form>
+            <label for="UF">UF:
+                <input name="UF" id="UF" required pattern="\d{2}"/>
+            </label> 
+        </form>
+        
+        <form> 
+            <label for="dtnasc">Data de Nascimento:
+                <input type="date" id="dtnasc" name="dtnasc" required>
+            </label>
+        </form>
+        
+        <form>
+            <label for="CEP">CEP:
+                <input name="CEP" id="CEP" required pattern="\d{5}-\d{3}"/>
+            </label>
+            <input type="submit" value="Enviar" />
+        </form>
+
+        <form>
+            <label for="endereco">Endereço:
+                <input type="endereco" id="endereco" name="endereco" required>
+            </label>
+        </form>
+        <form>
+
+        </form>
+ 
+        <form>
+            <label for="num">Número:
+                <input type="num" id="num" name="num" required>
+            </label>
+        </form>
+        
+    </div>
+    <div class="campodeescolhas">
+        <button>Adicionar Cliente</button>
+        <button>Lista de Clientes</button>
+    </div>
+</body>
+</html>
